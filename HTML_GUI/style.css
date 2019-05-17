@@ -1,0 +1,33 @@
+/*Grid box classes*/
+.files{
+	background-color: #466995;
+	border: 1px red solid;
+	grid-area: auto/auto / span 1/span 2;
+}
+
+.settings{
+	background-color: #DBE9EE;
+	display: inline-block;
+	border: 1px green solid;
+}
+
+.cmds{
+	background-color: #466995;
+	grid-column: 1/3;
+}
+
+div{
+	padding: 10px;
+	border: 1px black solid;
+}
+
+.grid{
+	display: grid;
+	border: 2px blue solid;
+	padding: 0px;
+	grid-template: 3fr 3fr 1fr/repeat(2, 1fr);
+}
+
+h1{
+	text-align: center;
+}

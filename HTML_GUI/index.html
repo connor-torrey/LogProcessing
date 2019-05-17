@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+
+<!-- Opening Tag of HTML document -->
+<html>
+	<!-- Open Header tag, link other files, top level definitions -->
+	<head>
+		<title>CANect Log File Processor</title>	<!--tab title-->
+		<link href="style.css" type="text/css" rel="stylesheet" />		<!-- Link stylesheet-->
+	</head>
+		
+	<!-- Open Body tag defines content of page -->
+	<body>
+		
+		<!-- Container for grid -->
+		<div class="grid">
+			<!-- Divider for file selection -->
+			<div id="FileSelection" class="content-box files" >
+				<h1>This will be where you select your file</h1>
+			</div>
+			
+			<!-- Divider for Processing type -->
+			<div id="ProcessType" class="content-box settings" >
+				<h1>This will be the export type section</h1>
+				
+				<!-- List of possible output types -->
+				<input type="checkbox" id="rawCsv" name="rawCsv" checked />
+				<label for="rawCsv">Raw CSV</label>
+				</br>
+				<input type="checkbox" id="intrplCsv" name="intrplCsv" />
+				<label for="intrplCsv">Interpolated CSV</label>
+				</br>
+				<input type="checkbox" id="plots" name="plots" />
+				<label for="plots">Plotted Graph</label>
+			</div>
+			
+			<!-- Divider for processing settings -->
+			<div id="settings" class="content-box settings" >
+				<h1>This will be the settings section<h1>
+			</div>
+			
+			<!-- Divider for export/cancel/reset commands -->
+			<div id="commands" class="content-box cmds">
+				<h1>This will be where the commands go</h1>
+			</div>
+		</div>
+		
+	</body>
+	
+</html>
