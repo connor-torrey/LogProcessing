@@ -6,6 +6,8 @@
 	<head>
 		<title>CANect Log File Processor</title>	<!--tab title-->
 		<link href="style.css" type="text/css" rel="stylesheet" />		<!-- Link stylesheet-->
+		<script src=content.js></script>								<!-- Include script to tie info back to python -->
+		<script src=interface.js></script>								<!-- Include script for dynamic content -->
 	</head>
 		
 	<!-- Open Body tag defines content of page -->
@@ -15,7 +17,11 @@
 		<div class="grid">
 			<!-- Divider for file selection -->
 			<div id="FileSelection" class="content-box files" >
-				<h1>This will be where you select your file</h1>
+				<label class="fileInput" for=loadfile>Select Log File to Load:</label>
+				<input class="fileInput" type=file id=loadfile name=loadfile required />
+				</br>
+				<label class="fileInput" for=savefile>Select Location to Save the File:</label>
+				<input class="fileInput" type=file id=savefile name=savefile webkitdirectory directory disabled=true />
 			</div>
 			
 			<!-- Divider for Processing type -->
@@ -41,6 +47,9 @@
 			<!-- Divider for export/cancel/reset commands -->
 			<div id="commands" class="content-box cmds">
 				<h1>This will be where the commands go</h1>
+				<input type=button id=process name=process value="Process File" />
+				<input type=button id=reset name=reset value="Reset Settings" />
+				<input type=button id=cancel name=cancel value="Cancel" />
 			</div>
 		</div>
 		

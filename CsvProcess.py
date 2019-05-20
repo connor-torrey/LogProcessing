@@ -2,7 +2,12 @@
 """
 Created on Fri Apr 19 14:05:19 2019
 
-@author: ctorr
+@author: C. Torrey
+Desc: CsvProcess opens a selected file and divides it into columns
+TODO: - Add interpolation, linear/quadratic/cubic
+      - Add Plotting option, stacked, single charts
+      - Restructure for easier maintenance/usage
+      - Deal with incomplete last entry issue
 """
 
 #import csv as FileReader

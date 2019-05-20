@@ -3,6 +3,7 @@
 	background-color: #466995;
 	border: 1px red solid;
 	grid-area: auto/auto / span 1/span 2;
+	
 }
 
 .settings{
@@ -17,8 +18,11 @@
 }
 
 div{
-	padding: 10px;
+	/* padding: 10px; */
 	border: 1px black solid;
+	margin: 0 0;
+	text-align: center;
+	vertical-align: middle;
 }
 
 .grid{
@@ -26,8 +30,29 @@ div{
 	border: 2px blue solid;
 	padding: 0px;
 	grid-template: 3fr 3fr 1fr/repeat(2, 1fr);
+	height: 500px;
+	width: 500px;
 }
 
+/* General tag classes*/
 h1{
 	text-align: center;
 }
+
+body{
+	padding: 0px;
+}
+
+
+
+/* Input type Classes*/
+.fileInput{
+	border: none;
+	padding: 10px;
+	max-width: 200px;
+}
+
+
+
+
+
